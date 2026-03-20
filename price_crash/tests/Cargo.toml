@@ -1,0 +1,25 @@
+[workspace]
+
+[package]
+name = "tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+parallax = { git = "https://github.com/AllenGeorge08/Parallax.git" , branch = "test_restructuring"}
+anchor-lang = { version = "0.31.1", features = ["derive", "init-if-needed"] }
+anchor-spl = { version = "0.31.1", features = ["idl-build"] }
+litesvm = "0.6.1"
+litesvm-token = "0.6.1"
+solana-instruction = "2.2.1"
+solana-keypair = "2.2.1"
+solana-native-token = "2.2.1"
+solana-pubkey = "2.2.1"
+solana-signer = "2.2.1"
+solana-system-interface = "1.0.0"
+solana-transaction = "2.2.1"
+solana-message = "2.2.1"
+solana-sdk-ids = "2.2.1"
+solana-address = "1.0.0"
+solana-account = "2.2.1"
+price_crash = { path = "../programs/price_crash/", features = ["cpi"] }
